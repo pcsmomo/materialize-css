@@ -61,4 +61,19 @@ Two ways to use icons : Slightly different
 >
 ```
 
+### 8. Floating & Fixed Action Buttons
+
+This is an awesome feature.
+
+[Floating Action Button](https://materializecss.com/floating-action-button.html)
+
+```js
+$(document).ready(function () {
+  $('.fixed-action-btn').openFAB(); // FAB : Floating Action Button
+  $('.fixed-action-btn').closeFAB();
+  $('.fixed-action-btn').openToolbar();
+  $('.fixed-action-btn').closeToolbar();
+});
+```
+
 </details>
