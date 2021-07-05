@@ -31,4 +31,34 @@ This course is using v0.100.2 and v1.0.0 the latest one.
 [Clearfix](https://getbootstrap.com/docs/5.0/helpers/clearfix/) \
 -> Is it from bootstrap?
 
+### 7. Buttons & Icons
+
+Two ways to use icons : Slightly different
+
+1. material-icons
+2. font-awesome
+
+```html
+<!--Import Google Icon Font-->
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous"
+/>
+
+<!-- BUTTON WITH MATERIAL ICON -->
+<a class="btn waves-effect waves-light" href="#!">
+  <i class="material-icons right">shopping_cart</i> Buy Now</a
+>
+<!-- BUTTON WITH FONT AWESOME ICON -->
+<a class="btn waves-effect waves-light" href="#!">
+  <i class="fa fa-shopping-cart left"></i> Buy Now</a
+>
+```
+
 </details>
