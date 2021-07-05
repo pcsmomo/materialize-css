@@ -91,7 +91,17 @@ Tip: if container div is used inside nav-wrapper
 </div>
 ```
 
+### 11. The Grid System
+
+#### Screen Sizes
+
+|                   |  Mobile  | Tablet  | Desktop | Large Desktop |
+| :---------------- | :------: | :-----: | :-----: | :-----------: |
+| Range             | <= 600px | > 600px | > 992px |   > 1200px    |
+| Class Prefix      |    .s    |   .m    |   .l    |      .xl      |
+| Container Width   |   90%    |   85%   |   70%   |      70%      |
+| Number of Columns |    12    |   12    |   12    |      12       |
+
 </details>
-````
 
 ## Next Step
