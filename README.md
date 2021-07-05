@@ -76,4 +76,20 @@ $(document).ready(function () {
 });
 ```
 
+### 9. Navbar
+
+Tip: if container div is used inside nav-wrapper
+
+```html
+<div class="nav-wrapper">
+  <div class="container">
+    <a>Logo</a>
+    <ul>
+      <li>Logo</li>
+    </ul>
+  </div>
+</div>
+```
+
 </details>
+````
