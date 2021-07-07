@@ -121,6 +121,26 @@ $('select').material_select();
 <input type="checkbox" class="filled-in" name="tech" id="js" />
 ```
 
+### 15. Fancy Form & Input Controls
+
+#### Many useful features
+
+```js
+// INIT DATEPICKER
+$('.datepicker').pickadate({});
+
+// INIT TIMEPICKER
+$('.timepicker').pickatime({});
+
+// INIT AUTOCOMPLETE
+$('.autocomplete').autocomplete({});
+```
+
 </details>
 
 ## Next Step
+
+- Upload separate posts on getsby website.
+  - Git commands
+  - Terminal commands
+  - Material css tips
