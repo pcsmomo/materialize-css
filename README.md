@@ -102,6 +102,25 @@ Tip: if container div is used inside nav-wrapper
 | Container Width   |   90%    |   85%   |   70%   |      70%      |
 | Number of Columns |    12    |   12    |   12    |      12       |
 
+### 14. Basic Form & Input Controls
+
+```js
+// Email validation
+<input placeholder="Email" id="email" type="email" class="validate" />
+<label data-error="Invalid" data-success="Valid" for="email">Email</label>
+
+// To use select options
+$('select').material_select();
+
+// widh-gap, Radio button
+<input type="radio" name="gender" id="male" checked />
+<input class="with-gap" type="radio" name="gender" id="female" />
+
+// filled-in, Checkbox
+<input type="checkbox" name="tech" id="css" checked />
+<input type="checkbox" class="filled-in" name="tech" id="js" />
+```
+
 </details>
 
 ## Next Step
