@@ -136,6 +136,10 @@ $('.timepicker').pickatime({});
 $('.autocomplete').autocomplete({});
 ```
 
+### 19. Carousel
+
+[Carousel](https://materializecss.com/carousel.html)
+
 </details>
 
 ## Next Step
