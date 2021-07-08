@@ -140,6 +140,12 @@ $('.autocomplete').autocomplete({});
 
 [Carousel](https://materializecss.com/carousel.html)
 
+### 20. Collapsible
+
+[Collapsible](https://materializecss.com/collapsible.html)
+
+There's one more type : popout on v1.0.0
+
 </details>
 
 ## Next Step
