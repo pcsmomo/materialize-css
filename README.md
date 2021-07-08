@@ -146,6 +146,10 @@ $('.autocomplete').autocomplete({});
 
 There's one more type : popout on v1.0.0
 
+### 24. Modals
+
+[Modals](https://materializecss.com/modals.html)
+
 </details>
 
 ## Next Step
