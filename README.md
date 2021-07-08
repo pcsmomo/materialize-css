@@ -144,3 +144,5 @@ $('.autocomplete').autocomplete({});
   - Git commands
   - Terminal commands
   - Material css tips
+- Patron Project
+  - Add chips (3_6_chips_pagination.html)
