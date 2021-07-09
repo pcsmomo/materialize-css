@@ -53,7 +53,7 @@
     </ul>
 
     <!-- Section: Slider -->
-    <section class="slider">
+    <!-- <section class="slider">
       <ul class="slides">
         <li>
           <img src="img/resort1.jpg" alt="resort1" />
@@ -89,6 +89,64 @@
           </div>
         </li>
       </ul>
+    </section> -->
+
+    <!-- Section: Search -->
+    <section class="section section-search teal darken-1 white-text center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Search Destinations</h3>
+            <div class="input-field">
+              <input
+                type="text"
+                class="white grey-text autocomplete"
+                placeholder="Aruba, Cancun, etc..."
+                type="text"
+                id="autocomplete-input"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large teal-text">room</i>
+              <h4>Pick Where</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                odit!
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large teal-text">store</i>
+              <h4>Travel Shop</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                odit!
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large teal-text">airplanemode_active</i>
+              <h4>Fly Cheap</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                odit!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Import jQuery before materialize.js-->
@@ -112,6 +170,26 @@
           height: 500,
           trasition: 500,
           interval: 6000
+        });
+
+        // Init Autautocompleteo
+        // var elems = document.querySelectorAll('.autocomplete');
+        // var options = {};
+        // var instances = M.Autocomplete.init(elems, options);
+        M.Autocomplete.init(document.querySelectorAll('.autocomplete'), {
+          data: {
+            Aruba: null,
+            'Cancun Mexico': null,
+            Hawaii: null,
+            Florida: null,
+            California: null,
+            Jamaica: null,
+            Europe: null,
+            'The Bahamas': null
+          },
+          sortFunction: function (a, b, inputString) {
+            return a.indexOf(inputString) - b.indexOf(inputString);
+          }
         });
       });
     </script>
