@@ -165,6 +165,12 @@ There's one more type : popout on v1.0.0
 
 [Materialize CSS Slider - Media](http://archives.materializecss.com/0.100.2/media.html)
 
+### 33. Search & Icon Boxes
+
+[Materialize CSS Autocomplete](https://materializecss.com/autocomplete.html)
+
+!important : to overwrite material css default style
+
 </details>
 
 ## Next Step
