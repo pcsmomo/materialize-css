@@ -162,6 +162,7 @@ There's one more type : popout on v1.0.0
 ### 32. Image Slider
 
 [Pexels](https://www.pexels.com/) : Free images and videos
+[Unsplash](https://unsplash.com/) : Free images and videos
 
 [Materialize CSS Slider - Media](http://archives.materializecss.com/0.100.2/media.html)
 
@@ -170,6 +171,12 @@ There's one more type : popout on v1.0.0
 [Materialize CSS Autocomplete](https://materializecss.com/autocomplete.html)
 
 !important : to overwrite material css default style
+
+### 34. Popular Places & Gallery
+
+fa-4x : font awesome size x 4
+
+[Unsplash Fetching Random Image](https://source.unsplash.com/1600x900/?beach)
 
 </details>
 
