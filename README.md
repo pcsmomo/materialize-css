@@ -159,6 +159,12 @@ There's one more type : popout on v1.0.0
   1. Upgrading to v1.0.0
   2. Using vanila javascript
 
+### 32. Image Slider
+
+[Pexels](https://www.pexels.com/) : Free images and videos
+
+[Materialize CSS Slider - Media](http://archives.materializecss.com/0.100.2/media.html)
+
 </details>
 
 ## Next Step
