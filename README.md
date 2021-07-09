@@ -152,8 +152,12 @@ There's one more type : popout on v1.0.0
 
 ### 30. Project Intro
 
-- p1_travelville_v0.100.2: Following the lecture
-- p1_travelville_v1.0.0: Upgrading to v1.0.0
+- p1_travelville_v0.100.2
+  1. Materializecss v0.100.2
+  2. jQuery
+- p1_travelville_v1.0.0
+  1. Upgrading to v1.0.0
+  2. Using vanila javascript
 
 </details>
 
