@@ -18,3 +18,20 @@
 .section-follow .fa-4x {
   margin: 5px 10px;
 }
+
+.section-contact h5 {
+  margin-bottom: 30px;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.sidenav {
+  visibility: hidden;
+}
+
+.sidenav > li > a {
+  color: white !important;
+  visibility: visible;
+}
