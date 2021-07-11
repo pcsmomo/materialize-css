@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="col s12 m4">
-            <div class="card-panel center">
+            <div class="card-panel">
               <i
                 class="fa fa-database fa-3x deep-purple-text text-darken-2"
               ></i>
@@ -160,7 +160,7 @@
             </div>
           </div>
           <div class="col s12 m4">
-            <div class="card-panel center">
+            <div class="card-panel">
               <i class="fa fa-bolt fa-3x deep-purple-text text-darken-2"></i>
               <h5 class="grey-text text-darken-4">Fast Connection</h5>
               <p>
@@ -256,7 +256,9 @@
               <p>Every Thursday at 5pm EST</p>
             </div>
             <div class="col s12 m4">
-              <a href="#" class="btn purple">Listen</a>
+              <a href="#" class="btn purple btn-large">
+                <i class="fa fa-podcast"></i> Listen
+              </a>
             </div>
           </div>
         </div>
@@ -264,38 +266,47 @@
     </section>
 
     <!-- Section: Testimonial -->
-    <section class="section section-testimonial center">
+    <section class="section section-testimonial grey lighten-4">
       <div class="container">
-        <div class="carousel carousel-slider">
-          <div class="carousel-item">
-            <h3>Testimonial 1</h3>
-            <h5>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              dignissimos. Culpa nisi corrupti minima laboriosam qui delectus
-              sed at unde.
-            </h5>
-            <h4>- Mike Smith from Edge INC</h4>
-            <a href="#" class="btn grey">Read More</a>
+        <div class="carousel carousel-slider center">
+          <div class="carousel-item" href="#one!">
+            <h2>Testimonial 1</h2>
+            <p class="flow-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit provident animi corporis quo, aliquid eos quae nulla cum
+              sint assumenda exercitationem dolorem aut facere alias unde,
+              blanditiis placeat, incidunt totam."
+              <em>- John Doe From Microsystems</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+            </div>
           </div>
-          <div class="carousel-item">
-            <h3>Testimonial 1</h3>
-            <h5>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              dignissimos. Culpa nisi corrupti minima laboriosam qui delectus
-              sed at unde.
-            </h5>
-            <h4>- Mike Smith from Edge INC</h4>
-            <a href="#" class="btn grey">Read More</a>
+          <div class="carousel-item" href="#two!">
+            <h2>Testimonial 2</h2>
+            <p class="flow-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit provident animi corporis quo, aliquid eos quae nulla cum
+              sint assumenda exercitationem dolorem aut facere alias unde,
+              blanditiis placeat, incidunt totam."
+              <em>- Mike Smith From Edge INC</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+            </div>
           </div>
-          <div class="carousel-item">
-            <h3>Testimonial 1</h3>
-            <h5>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              dignissimos. Culpa nisi corrupti minima laboriosam qui delectus
-              sed at unde.
-            </h5>
-            <h4>- Mike Smith from Edge INC</h4>
-            <a href="#" class="btn grey">Read More</a>
+          <div class="carousel-item" href="#three!">
+            <h2>Testimonial 3</h2>
+            <p class="flow-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit provident animi corporis quo, aliquid eos quae nulla cum
+              sint assumenda exercitationem dolorem aut facere alias unde,
+              blanditiis placeat, incidunt totam."
+              <em>- Karen Williams From Techsoft</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -317,6 +328,7 @@
         //   $('.modal').modal();
         // });
 
+        // Init carousel
         $('.carousel.carousel-slider').carousel({ fullWidth: true });
       });
     </script>
