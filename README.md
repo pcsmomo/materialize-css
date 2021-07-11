@@ -155,9 +155,11 @@ There's one more type : popout on v1.0.0
 - p1_travelville_v0.100.2
   1. Materializecss v0.100.2
   2. jQuery
+  3. Font Awesome v5.0.6
 - p1_travelville_v1.0.0
   1. Upgrading to v1.0.0
   2. Using vanila javascript
+  3. Font Awesome Free v5.15.3
 
 ### 32. Image Slider
 
@@ -177,6 +179,26 @@ There's one more type : popout on v1.0.0
 fa-4x : font awesome size x 4
 
 [Unsplash Fetching Random Image](https://source.unsplash.com/1600x900/?beach)
+
+### 37. Navbar & Showcase
+
+- v0.100.2
+  - Default Font Family: Roboto
+- v1.0.0
+  - Default font awesome size is bigger compare to v0.100.2
+  - Default Font Family: -apple-system
+
+```html
+<!-- v1.0.0 -->
+<!-- Smaller Size -->
+<li><a href="https://facebook.com" class="fab fa-facebook"></a></li>
+<!-- Bigger Size -->
+<li>
+  <a href="https://facebook.com">
+    <i class="fab fa-facebook"></i>
+  </a>
+</li>
+```
 
 </details>
 
