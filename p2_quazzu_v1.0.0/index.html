@@ -209,6 +209,72 @@
       </div>
     </section>
 
+    <!-- Section: Podcast -->
+    <section class="section section-podcast white-text">
+      <div class="primary-overlay valign-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m8">
+              <h4>Listen To the Quazzu Podcast</h4>
+              <p>Every Thursday at 5pm EST</p>
+            </div>
+            <div class="col s12 m4">
+              <a href="#" class="btn purple btn-large">
+                <i class="fa fa-podcast"></i> Listen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Testimonial -->
+    <section class="section section-testimonial grey lighten-4">
+      <div class="container">
+        <div class="carousel carousel-slider center">
+          <div class="carousel-item" href="#one!">
+            <h2>Testimonial 1</h2>
+            <p class="flow-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit provident animi corporis quo, aliquid eos quae nulla cum
+              sint assumenda exercitationem dolorem aut facere alias unde,
+              blanditiis placeat, incidunt totam."
+              <em>- John Doe From Microsystems</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+            </div>
+          </div>
+          <div class="carousel-item" href="#two!">
+            <h2>Testimonial 2</h2>
+            <p class="flow-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit provident animi corporis quo, aliquid eos quae nulla cum
+              sint assumenda exercitationem dolorem aut facere alias unde,
+              blanditiis placeat, incidunt totam."
+              <em>- Mike Smith From Edge INC</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+            </div>
+          </div>
+          <div class="carousel-item" href="#three!">
+            <h2>Testimonial 3</h2>
+            <p class="flow-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit provident animi corporis quo, aliquid eos quae nulla cum
+              sint assumenda exercitationem dolorem aut facere alias unde,
+              blanditiis placeat, incidunt totam."
+              <em>- Karen Williams From Techsoft</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--Import jQuery before materialize.js-->
     <script
       type="text/javascript"
@@ -218,10 +284,20 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         M.AutoInit();
+
         // Init Side nav
         M.Sidenav.init(document.querySelectorAll('.sidenav'), {
           preventScrolling: false
         });
+
+        // Init Carousel
+        M.Carousel.init(
+          document.querySelectorAll('.carousel.carousel-slider'),
+          {
+            fullWidth: true,
+            indicators: true
+          }
+        );
       });
     </script>
   </body>
