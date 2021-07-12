@@ -26,7 +26,52 @@
   </head>
 
   <body>
-    <h1>Theme Starter</h1>
+    <!-- Header -->
+    <header>
+      <nav class="blue">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Madmin</a>
+            <a
+              href="#"
+              data-activates="mobile-nav"
+              class="right button-collapse show-on-large"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="posts.html">Posts</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="comments.html">Comments</a></li>
+              <li><a href="users.html">Users</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-nav">
+              <li>
+                <div class="user-view">
+                  <div class="background">
+                    <img src="" alt="" />
+                  </div>
+                  <a href="#!user"><img src="" alt="" class="circle" /></a>
+                  <a href="#!name"><span class="white-text name">Noah</span></a>
+                  <a href="#!email"
+                    ><span class="white-text email">noah@gmail.com</span></a
+                  >
+                </div>
+              </li>
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="posts.html">Posts</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="comments.html">Comments</a></li>
+              <li><a href="users.html">Users</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="subheader">Account Controls</a></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!--Import jQuery before materialize.js-->
     <script
@@ -36,7 +81,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
-        // Custom JS & jQuery here
+        $('.button-collapse').sideNav();
       });
     </script>
   </body>

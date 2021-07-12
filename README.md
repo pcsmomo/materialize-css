@@ -200,6 +200,12 @@ fa-4x : font awesome size x 4
 </li>
 ```
 
+### 44. Navbar & Sidenav
+
+[What is The Fastest Way to Load Javascript : Defer](https://youtu.be/BMuFBYw91UQ)
+
+![Script Defer](./resources/script-load.png)
+
 </details>
 
 ## Next Step
