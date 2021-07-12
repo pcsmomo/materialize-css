@@ -206,6 +206,10 @@ fa-4x : font awesome size x 4
 
 ![Script Defer](./resources/script-load.png)
 
+### 46. Display Chart & Recent Comments
+
+[Canvas JS - Simple Line Chart](https://canvasjs.com/html5-javascript-line-chart/)
+
 </details>
 
 ## Next Step
