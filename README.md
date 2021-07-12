@@ -212,6 +212,11 @@ fa-4x : font awesome size x 4
 
 </details>
 
+## What I have used
+
+- Unsplash : Fetching Random Image
+- Canvas JS : Line Chart and Pie Chart
+
 ## Next Step
 
 - Upload separate posts on getsby website.
