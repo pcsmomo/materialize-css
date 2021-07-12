@@ -1,11 +1,5 @@
-.progress {
-  background-color: #bbb !important;
-}
-
-.card-blue .determinate {
-  background-color: white !important;
-}
-
-.card-white .determinate {
-  background-color: deepskyblue !important;
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
 }
