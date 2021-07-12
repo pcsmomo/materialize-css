@@ -76,21 +76,107 @@
       </nav>
     </header>
 
+    <!-- Section: Stats -->
+    <section class="section section-stats center">
+      <div class="row">
+        <div class="col l3 m6 s12">
+          <div class="card-panel blue lighten-1 white-text">
+            <i class="material-icons medium">insert_emoticon</i>
+            <h5>Montly Visitors</h5>
+            <h3 class="count1">28300</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate white" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card-panel">
+            <i class="material-icons medium">mode_edit</i>
+            <h5>Blog Posts</h5>
+            <h3 class="count">105</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate blue lighten-1" style="width: 20%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card-panel blue lighten-1 white-text">
+            <i class="material-icons medium">mode_comment</i>
+            <h5>Comments</h5>
+            <h3 class="count">1200</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate white" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card-panel">
+            <i class="material-icons medium">supervisor_account</i>
+            <h5>Users</h5>
+            <h3 class="count">350</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate blue lighten-1" style="width: 10%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preloader -->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
     <!--Import jQuery before materialize.js-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <!--Import materialize.js-->
     <script type="text/javascript" src="js/materialize.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        M.AutoInit();
+      // Hide Sections
+      $('.section').hide();
 
-        M.Sidenav.init(document.querySelectorAll('.sidenav'), {
-          preventScrolling: false
+      setTimeout(function () {
+        $(document).ready(function () {
+          // Show sections and hide preloader
+          $('.section').fadeIn();
+          $('.loader').hide();
+
+          // Counter in jQuery
+          $('.count').each(function () {
+            $(this)
+              .prop('Counter', 0)
+              .animate(
+                {
+                  Counter: $(this).text()
+                },
+                {
+                  duration: 1000,
+                  easing: 'swing',
+                  step: function (now) {
+                    $(this).text(Math.ceil(now));
+                  }
+                }
+              );
+          });
+
+          M.AutoInit();
+
+          //Init Side nav
+          M.Sidenav.init(document.querySelectorAll('.sidenav'), {
+            preventScrolling: false
+          });
         });
-      });
+      }, 1000);
     </script>
   </body>
 </html>
