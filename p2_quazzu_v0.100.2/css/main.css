@@ -63,3 +63,15 @@
     min-height: 240px;
   }
 }
+
+.solutions-header {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
+.solutions-header h5 {
+  margin-top: 50px;
+}
