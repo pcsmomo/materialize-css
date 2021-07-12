@@ -15,11 +15,6 @@
     />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
 
-    <!-- Font Awesome -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
-    ></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Materialize Theme</title>
@@ -28,45 +23,53 @@
   <body>
     <!-- Header -->
     <header>
-      <nav class="blue">
+      <nav class="blue darken-2">
         <div class="container">
           <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">Madmin</a>
             <a
               href="#"
-              data-activates="mobile-nav"
-              class="right button-collapse show-on-large"
+              data-activates="side-nav"
+              class="button-collapse show-on-large right"
             >
-              <i class="fa fa-bars"></i>
+              <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="index.html">Dashboard</a></li>
+              <li class="active"><a href="index.html">Dashboard</a></li>
               <li><a href="posts.html">Posts</a></li>
               <li><a href="categories.html">Categories</a></li>
               <li><a href="comments.html">Comments</a></li>
               <li><a href="users.html">Users</a></li>
             </ul>
-            <ul class="side-nav" id="mobile-nav">
+
+            <!-- Side nav -->
+            <ul class="side-nav" id="side-nav">
               <li>
                 <div class="user-view">
                   <div class="background">
-                    <img src="" alt="" />
+                    <img src="img/ocean.jpg" alt="background-img" />
                   </div>
-                  <a href="#!user"><img src="" alt="" class="circle" /></a>
-                  <a href="#!name"><span class="white-text name">Noah</span></a>
-                  <a href="#!email"
-                    ><span class="white-text email">noah@gmail.com</span></a
-                  >
+                  <a href="#">
+                    <img src="img/person1.jpg" alt="" class="circle" />
+                  </a>
+                  <a href="#"><span class="white-text name">Noah</span></a>
+                  <a href="#">
+                    <span class="white-text email">noah@gmail.com</span>
+                  </a>
                 </div>
               </li>
-              <li><a href="index.html">Dashboard</a></li>
+              <li>
+                <a href="index.html">
+                  <i class="material-icons">dashboard</i> Dashboard
+                </a>
+              </li>
               <li><a href="posts.html">Posts</a></li>
               <li><a href="categories.html">Categories</a></li>
               <li><a href="comments.html">Comments</a></li>
               <li><a href="users.html">Users</a></li>
               <li><div class="divider"></div></li>
               <li><a class="subheader">Account Controls</a></li>
-              <li><a href="login.html">Logout</a></li>
+              <li><a href="login.html" class="waves-effect">Logout</a></li>
             </ul>
           </div>
         </div>
@@ -81,6 +84,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
+        //Init Side nav
         $('.button-collapse').sideNav();
       });
     </script>
