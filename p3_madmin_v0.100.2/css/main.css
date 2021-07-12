@@ -1,0 +1,11 @@
+.progress {
+  background-color: #bbb !important;
+}
+
+.card-blue .determinate {
+  background-color: white !important;
+}
+
+.card-white .determinate {
+  background-color: deepskyblue !important;
+}
