@@ -3,3 +3,8 @@
   top: 40%;
   left: 47%;
 }
+
+.pagination .active {
+  background-color: deepskyblue !important;
+  color: white !important;
+}
