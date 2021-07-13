@@ -210,6 +210,15 @@ fa-4x : font awesome size x 4
 
 [Canvas JS - Simple Line Chart](https://canvasjs.com/html5-javascript-line-chart/)
 
+### 58. Koala Setup & Sass
+
+Installing Live Sass Compiler (VS Extension) \
+(I did not install Koala)
+
+Its own settings are saved on .vscode/settings.json
+
+[vscode-live-sass-compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
+
 </details>
 
 ## What I have used
