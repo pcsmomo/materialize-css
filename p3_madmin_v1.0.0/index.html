@@ -263,6 +263,113 @@
       <p>Madmin Panel Copyright &copy; 2021</p>
     </footer>
 
+    <!-- Fixed Action Button -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="material-icons large">add</i>
+      </a>
+      <ul>
+        <li>
+          <a href="#modal-post" class="btn-floating blue modal-trigger">
+            <i class="material-icons">mode_edit</i>
+          </a>
+        </li>
+        <li>
+          <a href="#modal-category" class="btn-floating blue modal-trigger">
+            <i class="material-icons">folder</i>
+          </a>
+        </li>
+        <li>
+          <a href="#modal-user" class="btn-floating blue modal-trigger">
+            <i class="material-icons">supervisor_account</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal: Add Post -->
+    <div id="modal-post" class="modal">
+      <div class="modal-content">
+        <h4>Add Post</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="title" />
+            <label for="title">Title</label>
+          </div>
+          <div class="input-field">
+            <select>
+              <option value="" disabled selected>Select option</option>
+              <option value="">Web Development</option>
+              <option value="">Graphic Design</option>
+              <option value="">Tech Gadgets</option>
+              <option value="">Other</option>
+            </select>
+            <label>Category</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              name="body"
+              id="body"
+              class="materialize-textarea"
+            ></textarea>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Add Category -->
+    <div id="modal-category" class="modal">
+      <div class="modal-content">
+        <h4>Add Category</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="title" />
+            <label for="title">Title</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Add User -->
+    <div id="modal-user" class="modal">
+      <div class="modal-content">
+        <h4>Add User</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="name" />
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" />
+            <label for="password">Password</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="confirm_password" />
+            <label for="confirm_password">Confirm Password</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- Preloader -->
     <div class="loader preloader-wrapper big active">
       <div class="spinner-layer spinner-blue-only">
@@ -279,12 +386,14 @@
     </div>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <!--Import CanvasJs before materialize.js-->
-    <script type="text/javascript" src="js/canvasjs.js"></script>
+    <script src="js/canvasjs.js"></script>
+    <!--Import CKEditor -->
+    <script src="js/ckeditor.js"></script>
 
     <!--Import materialize.js-->
-    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="js/materialize.js"></script>
     <script type="module">
       import chart from './js/chart.js';
 
@@ -384,6 +493,15 @@
                 });
               }
             });
+
+          // Init Modal
+          M.Modal.init(document.querySelectorAll('.modal'));
+
+          // Init Select
+          M.FormSelect.init(document.querySelectorAll('select'));
+
+          // create CKEditor
+          ClassicEditor.create(document.querySelector('#body'));
         });
       }, 1000);
     </script>
