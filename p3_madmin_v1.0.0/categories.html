@@ -10,7 +10,7 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="css/materialize.min.css"
+      href="css/materialize.css"
       media="screen,projection"
     />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -29,8 +29,8 @@
             <a href="index.html" class="brand-logo">Madmin</a>
             <a
               href="#"
-              data-activates="side-nav"
-              class="button-collapse show-on-large right"
+              data-target="side-nav"
+              class="sidenav-trigger show-on-large right"
             >
               <i class="material-icons">menu</i>
             </a>
@@ -43,7 +43,7 @@
             </ul>
 
             <!-- Side nav -->
-            <ul class="side-nav" id="side-nav">
+            <ul class="sidenav" id="side-nav">
               <li>
                 <div class="user-view">
                   <div class="background">
@@ -212,28 +212,29 @@
     </div>
 
     <!--Import jQuery before materialize.js-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <!--Import materialize.js-->
+    <script src="js/materialize.js"></script>
     <script type="module">
       // Hide Sections
       $('.section').hide();
 
       setTimeout(function () {
         $(document).ready(function () {
-          // Show sections
+          // Show sections and hide preloader
           $('.section').fadeIn();
-
-          // Hide preloader
           $('.loader').hide();
 
+          M.AutoInit();
+
           //Init Side nav
-          $('.button-collapse').sideNav();
+          M.Sidenav.init(document.querySelectorAll('.sidenav'), {
+            preventScrolling: false
+          });
 
           // Init Modal
-          $('.modal').modal();
+          M.Modal.init(document.querySelectorAll('.modal'));
         });
       }, 300);
     </script>
