@@ -1,3 +1,8 @@
+.active {
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.5s;
+}
+
 .primary-overlay {
   background: rgba(63, 57, 77, 0.7);
   position: absolute;
