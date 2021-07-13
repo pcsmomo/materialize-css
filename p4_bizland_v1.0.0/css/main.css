@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .main-header {
@@ -26,4 +27,22 @@
   bottom: 5%;
   left: 47%;
   opacity: 0.5;
+}
+
+.box {
+  padding: 40px 10px !important;
+}
+
+.box h4 {
+  padding-bottom: 30px;
+}
+
+.section-boxes .row {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    height: 50vh;
+  }
 }

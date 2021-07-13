@@ -13,8 +13,6 @@
       href="css/materialize.css"
       media="screen,projection"
     />
-    <!-- Font Awesome -->
-    <link type="text/css" rel="stylesheet" href="css/all.css" />
 
     <link type="text/css" rel="stylesheet" href="css/main.css" />
 
@@ -86,9 +84,9 @@
                 >Learn More</a
               >
               <a href="#contact" class="white-text">
-                <i class="material-icons medium scroll-icon"
-                  >arrow_drop_down_circle</imaterial-icons
-                >
+                <i class="material-icons medium scroll-icon">
+                  arrow_drop_down_circle
+                </i>
               </a>
             </div>
           </div>
@@ -96,15 +94,87 @@
       </div>
     </header>
 
+    <!-- Section: Boxes -->
+    <section class="section-boxes center">
+      <div class="row">
+        <div class="col l3 m6 s12 blue white-text box">
+          <i class="material-icons medium">show_chart</i>
+          <h4>Grow Your Business</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus facilis nulla velit sunt voluptate cum eligendi
+            error, aut enim tempora!
+          </p>
+        </div>
+        <div class="col l3 m6 s12 purple white-text box">
+          <i class="material-icons medium">people</i>
+          <h4>Professional Advisors</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus facilis nulla velit sunt voluptate cum eligendi
+            error, aut enim tempora!
+          </p>
+        </div>
+        <div class="col l3 m6 s12 teal white-text box">
+          <i class="material-icons medium">verified_user</i>
+          <h4>Secure Your Company</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus facilis nulla velit sunt voluptate cum eligendi
+            error, aut enim tempora!
+          </p>
+        </div>
+        <div class="col l3 m6 s12 amber darken-4 white-text box">
+          <i class="material-icons medium">account_balance</i>
+          <h4>Multiply Your Income</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Necessitatibus facilis nulla velit sunt voluptate cum eligendi
+            error, aut enim tempora!
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!--Import materialize.js-->
     <script type="text/javascript" src="js/materialize.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         M.AutoInit();
 
-        //Init Side nav
+        // Init Side nav
         M.Sidenav.init(document.querySelectorAll('.sidenav'), {
           preventScrolling: false
+        });
+
+        // Scroll Fire
+        document.addEventListener('scroll', function (e) {
+          // define constants
+          const TURNING_POSITION = 1000;
+          const DEFAULT_CLASS = 'transparent';
+          const ARRAY_CHANGING_CLASS = ['grey', 'darken-2'];
+
+          const navClassList = document.querySelector('nav').classList;
+
+          if (window.scrollY > TURNING_POSITION) {
+            const hasDefaultClass = navClassList.contains(DEFAULT_CLASS);
+            if (hasDefaultClass) {
+              navClassList.remove(DEFAULT_CLASS);
+              ARRAY_CHANGING_CLASS.forEach((changingClass) => {
+                navClassList.add(changingClass);
+              });
+            }
+          } else {
+            const hasChangingClass = navClassList.contains(
+              ARRAY_CHANGING_CLASS[0]
+            );
+            if (hasChangingClass) {
+              ARRAY_CHANGING_CLASS.forEach((changingClass) => {
+                navClassList.remove(changingClass);
+              });
+              navClassList.add(DEFAULT_CLASS);
+            }
+          }
         });
       });
     </script>
