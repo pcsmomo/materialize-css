@@ -265,7 +265,7 @@
 
     <!-- Fixed Action Button -->
     <div class="fixed-action-btn">
-      <a href="#" class="btn-floating btn-large red">
+      <a class="btn-floating btn-large red">
         <i class="material-icons large">add</i>
       </a>
       <ul>
@@ -297,16 +297,28 @@
             <label for="title">Title</label>
           </div>
           <div class="input-field">
-            <select id="category">
+            <select>
               <option value="" disabled selected>Select option</option>
               <option value="">Web Development</option>
               <option value="">Graphic Design</option>
               <option value="">Tech Gadgets</option>
               <option value="">Other</option>
             </select>
-            <label for="category"></label>
+            <label>Category</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              name="body"
+              id="body"
+              class="materialize-textarea"
+            ></textarea>
           </div>
         </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
       </div>
     </div>
 
@@ -319,8 +331,12 @@
             <input type="text" id="title" />
             <label for="title">Title</label>
           </div>
-          <input type="submit" class="btn blue right" />
         </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
       </div>
     </div>
 
@@ -330,8 +346,8 @@
         <h4>Add User</h4>
         <form>
           <div class="input-field">
-            <input type="text" id="title" />
-            <label for="title">Title</label>
+            <input type="text" id="name" />
+            <label for="name">Name</label>
           </div>
           <div class="input-field">
             <input type="email" id="email" />
@@ -345,8 +361,12 @@
             <input type="password" id="confirm_password" />
             <label for="confirm_password">Confirm Password</label>
           </div>
-          <input type="submit" class="btn blue right" />
         </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
       </div>
     </div>
 
@@ -370,9 +390,10 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
-    <!--Import CanvasJs before materialize.js-->
+    <!--Import CanvasJs -->
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
+    <!--Import CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="module">
       // import chart
@@ -453,6 +474,8 @@
 
           // Init Select
           $('select').material_select();
+
+          ClassicEditor.create(document.querySelector('#body'));
         });
       }, 1000);
     </script>
