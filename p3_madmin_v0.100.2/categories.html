@@ -36,8 +36,8 @@
             </a>
             <ul class="right hide-on-med-and-down">
               <li><a href="index.html">Dashboard</a></li>
-              <li class="active"><a href="posts.html">Posts</a></li>
-              <li><a href="categories.html">Categories</a></li>
+              <li><a href="posts.html">Posts</a></li>
+              <li class="active"><a href="categories.html">Categories</a></li>
               <li><a href="comments.html">Comments</a></li>
               <li><a href="users.html">Users</a></li>
             </ul>
@@ -81,11 +81,10 @@
       <div class="container">
         <div class="card">
           <div class="card-content">
-            <div class="card-title">Posts</div>
+            <div class="card-title">Categories</div>
             <table class="striped">
               <thead>
                 <tr>
-                  <th>Title</th>
                   <th>Category</th>
                   <th>Date Created</th>
                   <th></th>
@@ -93,7 +92,6 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Post One</td>
                   <td>Web Development</td>
                   <td>Jan 1, 2021</td>
                   <td>
@@ -103,7 +101,6 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Post Two</td>
                   <td>Graphic Design</td>
                   <td>Jan 2, 2021</td>
                   <td>
@@ -113,7 +110,6 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Post Three</td>
                   <td>Web Development</td>
                   <td>Jan 3, 2021</td>
                   <td>
@@ -123,29 +119,8 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Post Four</td>
                   <td>Tech Gadgets</td>
                   <td>Jan 5, 2021</td>
-                  <td>
-                    <a href="details.html" class="btn blue lighten-2">
-                      Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Post Five</td>
-                  <td>Graphic Design</td>
-                  <td>Jan 6, 2021</td>
-                  <td>
-                    <a href="details.html" class="btn blue lighten-2">
-                      Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Post Six</td>
-                  <td>Web Development</td>
-                  <td>Jan 7, 2021</td>
                   <td>
                     <a href="details.html" class="btn blue lighten-2">
                       Details
@@ -195,36 +170,22 @@
 
     <!-- Fixed Action Button -->
     <div class="fixed-action-btn">
-      <a href="#modal-post" class="btn-floating btn-large red modal-trigger">
+      <a
+        href="#modal-category"
+        class="btn-floating btn-large red modal-trigger"
+      >
         <i class="material-icons large">add</i>
       </a>
     </div>
 
-    <!-- Modal: Add Post -->
-    <div id="modal-post" class="modal">
+    <!-- Modal: Add Category -->
+    <div id="modal-category" class="modal">
       <div class="modal-content">
-        <h4>Add Post</h4>
+        <h4>Add Category</h4>
         <form>
           <div class="input-field">
             <input type="text" id="title" />
             <label for="title">Title</label>
-          </div>
-          <div class="input-field">
-            <select>
-              <option value="" disabled selected>Select option</option>
-              <option value="">Web Development</option>
-              <option value="">Graphic Design</option>
-              <option value="">Tech Gadgets</option>
-              <option value="">Other</option>
-            </select>
-            <label>Category</label>
-          </div>
-          <div class="input-field">
-            <textarea
-              name="body"
-              id="body"
-              class="materialize-textarea"
-            ></textarea>
           </div>
         </form>
         <div class="modal-footer">
@@ -255,8 +216,6 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
-    <!--Import CKEditor -->
-    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="module">
       // Hide Sections
@@ -275,12 +234,6 @@
 
           // Init Modal
           $('.modal').modal();
-
-          // Init Select
-          $('select').material_select();
-
-          // create CKEditor
-          ClassicEditor.create(document.querySelector('#body'));
         });
       }, 300);
     </script>
