@@ -240,6 +240,39 @@
     </section>
 
     <!-- Section: Contact -->
+    <section id="contact" class="section section-contact center scrollspy">
+      <div id="googlemap"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col m6 offset-m6 s12">
+            <div class="card-panel z-depth-5">
+              <h4>Contact Us</h4>
+              <div class="input-field">
+                <input type="text" id="name" />
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone" />
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="materialize-textarea"
+                ></textarea>
+                <label for="message">message</label>
+              </div>
+              <input type="submit" class="btn blue-grey" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="page-footer blue-grey darken-1">
@@ -278,6 +311,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
     <!--Import materialize.js-->
     <script type="text/javascript" src="js/materialize.js"></script>
@@ -321,9 +356,56 @@
         });
 
         // Init Scrollspy
-        M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
-          activeClass: 'active'
-        });
+        M.ScrollSpy.init(document.querySelectorAll('.scrollspy'));
+
+        // Init Google map
+        const position = [-37.7999, 145.11513];
+        const centerPosition = [-37.79950285893802, 145.17303785842992];
+
+        function showGoogleMaps() {
+          // Map Positions
+          const latLng = new google.maps.LatLng(position[0], position[1]);
+          const centerLatLng = new google.maps.LatLng(
+            centerPosition[0],
+            centerPosition[1]
+          );
+
+          // Map Options
+          const mapOptions = {
+            zoom: 12,
+            streetViewControl: false,
+            scaleControl: true,
+            mapTypeId: 'roadmap',
+            center: centerLatLng
+          };
+
+          // Create Map
+          const map = new google.maps.Map(
+            document.getElementById('googlemap'),
+            mapOptions
+          );
+
+          // Show Marker
+          marker = new google.maps.Marker({
+            position: latLng,
+            map,
+            draggable: false,
+            animation: google.maps.Animation.DROP
+          });
+
+          marker.addListener('click', toggleBounce);
+        }
+
+        function toggleBounce() {
+          if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+
+        // Maps event
+        google.maps.event.addDomListener(window, 'load', showGoogleMaps);
       });
     </script>
   </body>
