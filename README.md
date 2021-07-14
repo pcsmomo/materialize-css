@@ -14,6 +14,8 @@ I am going to write down the parts I want to write 😐
 - Install Live Server Extension
 - Emmet!!
 
+[Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
+
 ### 4. Materialize Sandbox Setup
 
 This course is using v0.100.2 and v1.0.0 the latest one.
